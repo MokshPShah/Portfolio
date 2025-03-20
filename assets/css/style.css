@@ -14,10 +14,10 @@ body {
     color: var(--white-color);
     font-family: var(--text-font);
 }
-p{
+p {
     font-size: 15px;
 }
-.fs-25{
+.fs-25 {
     font-size: 25px;
 }
 .navbar {
@@ -42,9 +42,11 @@ p{
     object-fit: cover;
 }
 .social-icons a {
-    color: var(--white-color);
-    margin: 0 10px;
     font-size: 1.2em;
+    transition: all 0.5s;
+}
+.social-icons a:hover {
+    color: var(--primary-color) !important;
 }
 .scroll-container {
     width: 100%;
@@ -92,7 +94,7 @@ p{
     transition: all .5s;
     color: var(--white-color);
 }
-.text-orange{
+.text-orange {
     color: var(--primary-color);
 }
 a {
@@ -172,14 +174,13 @@ a {
     border: 1px solid #444;
     color: #fff;
 }
-
 .form-control:focus, .form-select:focus {
     background-color: #2d2d2d;
     color: var(--white-color);
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.25rem rgba(255, 120, 73, 0.25);
 }
-.cta{
+.cta {
     width: 92%;
 }
 .form-control::placeholder {
@@ -189,19 +190,89 @@ a {
     font-size: 0.8em;
     color: rgba(var(--white-color-rgb), 0.5);
 }
-.fade-in {
-    animation: fadeIn 0.5s ease-in-out;
-}
-@keyframes fadeIn {
+@keyframes appear-top {
     from {
         opacity: 0;
+        transform: translateY(-100px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
+.appear-top-only {
+    animation: appear-top 0.7s linear;
+}
+.appear-top {
+    animation: appear-top linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 33%;
+}
+@keyframes appear-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.appear-bottom-only {
+    animation: appear-bottom 0.5s linear;
+}
+.appear-bottom {
+    animation: appear-bottom linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 33%;
+}
+@keyframes appear-right {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.appear-right-only {
+    animation: appear-right 0.5s linear;
+}
+.appear-right {
+    animation: appear-right linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 33%;
+}
+@keyframes appear-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.appear-left-only {
+    animation: appear-left 0.5s linear;
+}
+.appear-left {
+    animation: appear-left linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 33%;
+}
 @media (max-width: 575px) {
-    .fs-25{
+    p{
+        font-size: 12px;
+    }
+    .cta p{
+        width: 100% !important;
+    }
+    .display-5{
+        font-size: 23px !important;
+    }
+    .fs-25 {
         font-size: 15px;
     }
 }

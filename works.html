@@ -4,11 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Logo/favicon.png" type="image/x-icon">
     <title>Moksh Shah - Contact</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        p{
+            width: 50%;
+        }
+        @media (max-width: 575px) {
+            p{
+                width: 100% !important;
+            }
+        }
+    </style>
 </head>
 
 <body data-bs-theme="dark">
@@ -50,12 +61,12 @@
                 <div class="col-md-12">
                     <div class="rounded-box">
                         <h4 class="mb-4 text-center display-5 fw-semibold">Works & Projects</h4>
-                        <p class="text-center w-50 mx-auto text-muted mb-5">Check out some of my design projects,
+                        <p class="text-center mx-auto text-muted mb-5">Check out some of my design projects,
                             meticulously crafted with love and dedication, each one reflecting the passion and
                             soul
                             I poured into every detail.</p>
                         <div class="row g-4">
-                            <div class="col-md-4">
+                            <div class="col-md-4 appear-left-only">
                                 <div class="card project-card h-100 rounded-box">
                                     <div class="image-wrapper">
                                         <img src="assets/img/Projects/p-1.jpg" alt="E-commerce Project"
@@ -67,7 +78,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 appear-bottom-only">
                                 <div class="card project-card h-100 rounded-box">
                                     <div class="image-wrapper">
                                         <img src="assets/img/Projects/p-2.jpg" alt="Mobile App"
@@ -79,7 +90,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 appear-right-only">
                                 <div class="card project-card h-100 rounded-box">
                                     <div class="image-wrapper">
                                         <img src="assets/img/Projects/p-3.jpg" alt="Corporate Website"
@@ -91,7 +102,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 appear-left">
                                 <div class="card project-card h-100 rounded-box">
                                     <div class="image-wrapper">
                                         <img src="assets/img/Projects/p-1.jpg" alt="E-commerce Project"
@@ -103,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 appear-bottom">
                                 <div class="card project-card h-100 rounded-box">
                                     <div class="image-wrapper">
                                         <img src="assets/img/Projects/p-2.jpg" alt="Mobile App"
@@ -115,7 +126,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 appear-right">
                                 <div class="card project-card h-100 rounded-box">
                                     <div class="image-wrapper">
                                         <img src="assets/img/Projects/p-3.jpg" alt="Corporate Website"
@@ -133,7 +144,7 @@
             </div>
         </div>
         <!-- CTA Section -->
-        <div class="px-4 cta mx-auto px-md-5 py-5">
+        <div class="px-4 cta mx-auto px-md-5 py-5 appear-bottom">
             <div class="rounded-box shadow-sm p-5 text-center">
                 <h2 class="display-5 mb-4">
                     Are You Ready to kickstart your project with a touch of magic?
