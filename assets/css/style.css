@@ -21,7 +21,7 @@ p {
     font-size: 25px;
 }
 .navbar {
-    box-shadow: 0 -1px 35px rgba(var(--white-color-rgb), 0.25);
+    box-shadow: 0 0 10px rgba(var(--white-color-rgb), 0.25);
 }
 .rounded-box {
     border-radius: 15px;
